@@ -102,7 +102,7 @@ export default function App() {
 
     ws.current.send(unsub);
 
-    setPair(e.target.value);
+    setPair(e.target.innerHTML);
   };
 
   return (
@@ -110,6 +110,7 @@ export default function App() {
       <QueryClientProvider client={queryClient}>
         <div className="container">
           <h1>Crypto Price Tracker</h1>
+          <h5>Click on a card with a Cryptocurrency/USD pair then scroll below to see the graph!</h5>
           {
             <select name="currency" value={pair} onChange={handleSelect}>
               {currencies.map((cur, idx) => {
@@ -139,7 +140,6 @@ function Cards(props) {
       {props.currencies.map((cur, idx) => (
         <div className="cards">
           <p onClick={props.handleSelect} value={cur.id} >{cur.id}</p>
-          <p>{props.price}</p>
         </div>
       ))}
     </div>
