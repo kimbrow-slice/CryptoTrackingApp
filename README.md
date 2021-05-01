@@ -1,2 +1,2 @@
 # ReactJS Cryptocurrency dashboard tutorial
-This project was created with a basic template from github.com/renaissancetroll. The goal was to build a ReactJS dashboard using the Coinbase API to retreive data using their REST and Websocket API for real time data. For more information check out the full video tutorial going over the code line by line. I also go over some more ideas for how to extend the project and use Coinbase's API
+The goal was to build a ReactJS dashboard using the Coinbase API to retreive data using their REST and Websocket API for real time data.
